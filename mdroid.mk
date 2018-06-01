@@ -17,7 +17,8 @@
 $(call inherit-product, device/xiaomi/tissot/full_tissot.mk)
 
 # Inherit some common Miracle stuff.
-$(call inherit-product, vendor/mdroid/config/common_full_phone.mk)
+$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
+$(call inherit-product, vendor/lluvia/config/caf_fw.mk)
 
 
 # A/B updater
@@ -53,7 +54,7 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     libgptutils \
     libz
 
-PRODUCT_NAME := mdroid_tissot
+PRODUCT_NAME := lluvia_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := tissot
 
@@ -61,6 +62,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="saksham"
 
 BUILD_FINGERPRINT := xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys
 
