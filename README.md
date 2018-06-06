@@ -1,5 +1,5 @@
 ## This tree is only for lluvia official build for Tissot
-If you want to build unofficial build for Tissot with this tree, you must remove line 66
+If you want to build unofficial build for Tissot with this tree, you must remove line 66 and 67.
 
 ## Device configuration for Xiaomi Mi A1
 
