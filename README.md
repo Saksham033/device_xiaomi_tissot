@@ -1,3 +1,6 @@
+## This tree is only for lluvia official build for Tissot
+If you want to build unofficial build for Tissot with this tree, you must remove line 66
+
 ## Device configuration for Xiaomi Mi A1
 
 The Xiaomi Mi A1 (codenamed _"tissot"_) is a mid-range smartphone from Xiaomi.
