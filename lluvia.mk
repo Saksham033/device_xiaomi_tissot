@@ -66,6 +66,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="saksham | @zeroatlol"
 
+export LLUVIA_BUILD_TYPE=Official
+
 BUILD_FINGERPRINT := xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys
 
 
