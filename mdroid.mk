@@ -16,7 +16,7 @@
 
 $(call inherit-product, device/xiaomi/tissot/full_tissot.mk)
 
-# Inherit some common Miracle stuff.
+# Inherit some common Miracle droid stuff.
 $(call inherit-product, vendor/mdroid/config/common_full_phone.mk)
 
 
