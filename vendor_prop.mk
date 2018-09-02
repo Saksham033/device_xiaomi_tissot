@@ -1,5 +1,5 @@
 #
-# system.prop for tissot
+# vendor_prop for tissot
 #
 
 # Audio
