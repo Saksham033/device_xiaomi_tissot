@@ -199,9 +199,6 @@ TARGET_PER_MGR_ENABLED := true
 # Power
 TARGET_POWERHAL_VARIANT := qcom
 
-# Properties
-TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
-
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USE_SDCLANG := true
