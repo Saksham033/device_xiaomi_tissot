@@ -16,8 +16,12 @@
 
 $(call inherit-product, device/xiaomi/tissot/full_tissot.mk)
 
-# Inherit some common Colt stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit some common Nitrogen stuff.
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 
 
 # A/B updater
@@ -44,16 +48,7 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl \
     update_engine_client
 
-# Boot control HAL
-PRODUCT_PACKAGES += \
-    bootctrl.qcom
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.qcom \
-    libgptutils \
-    libz
-
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := nitrogen_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := tissot
 
