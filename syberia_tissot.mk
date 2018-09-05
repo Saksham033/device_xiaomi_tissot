@@ -20,8 +20,8 @@ $(call inherit-product, device/xiaomi/tissot/full_tissot.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Nitrogen stuff.
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+# Inherit some common Syberia stuff.
+$(call inherit-product, vendor/syberia/common.mk)
 
 
 # A/B updater
@@ -48,9 +48,15 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl \
     update_engine_client
 
-PRODUCT_NAME := nitrogen_tissot
+PRODUCT_NAME := syberia_tissot
+PRODUCT_DEVICE := tissot
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := MI A1
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := tissot
+
+TARGET_VENDOR_PRODUCT_NAME := tissot
+TARGET_VENDOR_DEVICE_NAME := tissot
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
