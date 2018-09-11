@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Syberian stuff.
-$(call inherit-product, vendor/syberia/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 
 # A/B updater
@@ -48,7 +48,7 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl \
     update_engine_client
 
-PRODUCT_NAME := syberia_tissot
+PRODUCT_NAME := crdroid_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := tissot
 
@@ -60,7 +60,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys"
 
-DEVICE_MAINTAINER := Saksham
+DEVICE_MAINTAINER := Sa
 
 BUILD_FINGERPRINT := xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys
 
