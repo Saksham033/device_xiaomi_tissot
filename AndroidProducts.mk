@@ -16,4 +16,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_tissot.mk \
-    $(LOCAL_DIR)/arrow_tissot.mk
+    $(LOCAL_DIR)/lineage.mk
