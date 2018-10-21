@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Syberian stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 
 # A/B updater
@@ -48,7 +48,7 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl \
     update_engine_client
 
-PRODUCT_NAME := arrow_tissot
+PRODUCT_NAME := lineage_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := tissot
 
